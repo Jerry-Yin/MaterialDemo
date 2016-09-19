@@ -14,4 +14,9 @@
         completions."
     </string>
     <string name="title_activity_main">MainActivity</string>
+
+
+    <string name="transition">transition</string>
+    <string name="transition_name">transiition_name</string>
+
 </resources>
