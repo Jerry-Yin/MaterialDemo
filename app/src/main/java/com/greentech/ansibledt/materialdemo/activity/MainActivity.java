@@ -89,9 +89,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 ActivityCompat.startActivity(this, intent4, optionsCompat4.toBundle());
                 break;
 
-//            case R.id.card5:
-//
-//                break;
+            case R.id.card5:
+
+                break;
         }
 
     }
