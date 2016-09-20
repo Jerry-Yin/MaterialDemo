@@ -143,8 +143,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_margin="16dp">
+                android:gravity="center">
 
                 <Button
                     android:id="@+id/btn_dialog_1"
