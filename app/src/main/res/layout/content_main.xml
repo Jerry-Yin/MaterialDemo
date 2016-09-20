@@ -121,7 +121,8 @@
                 android:elevation="10dp"
                 android:background="@drawable/ripple_bgd"
                 android:text="Ripples（涟漪)"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:textAllCaps="false"/>
 
 
             <Button
@@ -133,7 +134,51 @@
                 android:elevation="10dp"
                 android:background="@color/blue1"
                 android:text="StateListAnimator（磁铁吸引)"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:translationZ="10dp"
+                android:textAllCaps="false"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="16dp">
+
+                <Button
+                    android:id="@+id/btn_dialog_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="dialog1"
+                    android:textAllCaps="false"
+                    android:layout_margin="10dp"
+                    android:background="@color/blue2"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/btn_dialog_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="dialog2"
+                    android:textAllCaps="false"
+                    android:layout_margin="10dp"
+                    android:background="@color/blue2"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/btn_dialog_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="dialog3"
+                    android:textAllCaps="false"
+                    android:layout_margin="10dp"
+                    android:background="@color/blue2"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
 
         </LinearLayout>
 
