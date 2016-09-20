@@ -13,7 +13,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:clipToPadding="false">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -120,6 +121,18 @@
                 android:elevation="10dp"
                 android:background="@drawable/ripple_bgd"
                 android:text="Ripples（涟漪)"
+                android:textColor="@color/white"/>
+
+
+            <Button
+                android:id="@+id/card6"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                android:elevation="10dp"
+                android:background="@color/blue1"
+                android:text="StateListAnimator（磁铁吸引)"
                 android:textColor="@color/white"/>
 
         </LinearLayout>
