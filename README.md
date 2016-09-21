@@ -45,3 +45,49 @@ Material 风格测试用例：
     7. MaterialDialog
                 https://github.com/GoogleSample/L-Dialogs
                 https://github.com/GoogleSample/MaterialDialog
+
+
+
+
+
+    二、 MaterialDesign 控件：
+
+                TabLayout, NavigationView,Floating labels for editing text,Floating Action Button,Snackbar, CoordinatorLayout, CollapsingToolbarLayout
+
+                1. TabLayout的使用：
+                    根据官方文档说明，TabLayout的使用有以下两种方式：
+
+                    <1> 通过TabLayout的addTab()方法添加新构建的Tab实例到TabLayout中：
+
+                        TabLayout tabLayout = ...;
+                        tabLayout.addTab(tabLayout.newTab().setText("Tab 1"));
+                        tabLayout.addTab(tabLayout.newTab().setText("Tab 2"));
+                        tabLayout.addTab(tabLayout.newTab().setText("Tab 3"));
+
+
+                    <2> 第二种则是使用ViewPager和TabLayout一站式管理Tab，也就是说不需要像第一种方式那样手动添加Tab：
+
+                        ViewPager viewPager = ...;
+                        TabLayout tabLayout = ...;
+                        viewPager.addOnPageChangeListener(new TabLayoutOnPageChangeListener(tabLayout));
+
+                    而我们TabLayout的Demo就是用得第二种方式：
+
+                        //Fragment+ViewPager+FragmentViewPager组合的使用
+                        ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
+                        MyFragmentPagerAdapter adapter = new MyFragmentPagerAdapter(getSupportFragmentManager(),
+                                this);
+                        viewPager.setAdapter(adapter);
+
+                        //TabLayout
+                        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+                        tabLayout.setupWithViewPager(viewPager); (***必须要***)
+
+                    注意： tab内容需要居中，两种方式实现（xml／代码(两个属性必须同时使用才有效果)）：
+                                app:tabGravity="fill"
+                                app:tabMode="fixed"
+
+                                or
+
+                                tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+                                tabLayout.setTabMode(TabLayout.MODE_FIXED);
