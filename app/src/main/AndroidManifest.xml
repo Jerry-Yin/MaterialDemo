@@ -28,9 +28,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.InfoActivity" />
         <activity android:name=".activity.InfoActivity2" />
-        <activity android:name=".activity.ViewPagerActivity"></activity>
-        <activity android:name=".activity.CoordinatorLayoutActivity"></activity>
-        <activity android:name=".activity.CollapsingToolbarActivity"></activity>
+        <activity android:name=".activity.ViewPagerActivity" />
+        <activity android:name=".activity.CoordinatorLayoutActivity" />
+        <activity android:name=".activity.CollapsingToolbarActivity" />
+        <activity android:name=".activity.PaletteActivity"></activity>
     </application>
 
 </manifest>

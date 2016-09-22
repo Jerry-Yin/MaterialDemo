@@ -8,6 +8,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.util.Pair;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.graphics.Palette;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -22,7 +23,7 @@ import me.drakeet.materialdialog.MaterialDialog;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-    private CardView mCardView1, mCardView2, mCardView3, mCardView4, mCardView5, mCardView7, mCardView8, mCardView9;
+    private CardView mCardView1, mCardView2, mCardView3, mCardView4, mCardView5, mCardView7, mCardView8, mCardView9, mCardView10;
     private TextView mTextView4;
     private Button mBtnDialog1, mBtnDialog2, mBtnDialog3;
 
@@ -55,6 +56,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mCardView7 = (CardView) findViewById(R.id.card7);
         mCardView8 = (CardView) findViewById(R.id.card8);
         mCardView9 = (CardView) findViewById(R.id.card9);
+        mCardView10 = (CardView) findViewById(R.id.card10);
+
         mTextView4 = (TextView) findViewById(R.id.text4);
         mBtnDialog1 = (Button) findViewById(R.id.btn_dialog_1);
         mBtnDialog2 = (Button) findViewById(R.id.btn_dialog_2);
@@ -68,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mCardView7.setOnClickListener(this);
         mCardView8.setOnClickListener(this);
         mCardView9.setOnClickListener(this);
+        mCardView10.setOnClickListener(this);
         mBtnDialog1.setOnClickListener(this);
         mBtnDialog2.setOnClickListener(this);
         mBtnDialog3.setOnClickListener(this);
@@ -189,6 +193,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.card9:
                 Intent intent7 = new Intent(this, CollapsingToolbarActivity.class);
                 startActivity(intent7);
+
+                break;
+
+            case R.id.card10:
+                Intent intent8 = new Intent(this, PaletteActivity.class);
+                startActivity(intent8);
 
                 break;
         }
