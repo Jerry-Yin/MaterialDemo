@@ -239,5 +239,5 @@ Material 风格测试用例：
                       toolbar.setBackgroundColor(vibrantSwatch.getRgb());
                       toolbar.setTitleTextColor(vibrantSwatch.getTitleTextColor());
 
-![image](https://github.com/Jerry-Yin/MaterialDemo/tree/master/image)
+![image](https://github.com/Jerry-Yin/MaterialDemo/tree/master/image/img1.jpg)
 
