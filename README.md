@@ -232,3 +232,11 @@ Material 风格测试用例：
                     getBodyTextColor();      //适用于描述文字
                     getRgb();                //主要颜色  适用于设置toolbar颜色
                     getTitleTextColor();     //适合toolbar标题颜色
+
+
+                    // Set the toolbar background and text colors
+                      Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+                      toolbar.setBackgroundColor(vibrantSwatch.getRgb());
+                      toolbar.setTitleTextColor(vibrantSwatch.getTitleTextColor());
+
+                      ![image](https://github.com/Jerry-Yin/MaterialDemo/app/src/main/res/mipmap-hdpi/ic_launcher.png)
