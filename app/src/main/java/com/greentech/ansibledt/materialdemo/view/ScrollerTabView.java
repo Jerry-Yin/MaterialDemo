@@ -12,6 +12,8 @@ import android.view.View;
  * Created by JerryYin on 9/20/16.
  *
  * ViewPager 自定义滑动tab
+ *
+ *  ( X ) 没用到
  */
 public class ScrollerTabView extends View {
 
