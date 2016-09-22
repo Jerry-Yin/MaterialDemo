@@ -17,4 +17,9 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!--CollapsingToolbarLayout标题样式-->
+    <style name="CollapsingTitle">
+        <item name="android:textColor">@color/white</item>
+        <!--<item name="android:textSize">20sp</item>-->
+    </style>
 </resources>
