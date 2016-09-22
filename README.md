@@ -211,3 +211,24 @@ Material 风格测试用例：
                         AppBarLayout 的高度layout_height固定，不能 “wrap_content”，如果不固定的话动画效果不友好
                         CollapsingToolbarLayout的子视图设置layout_collapseMode属性
                         关联悬浮视图设置app:layout_anchor，app:layout_anchorGravity属性
+
+                10. Palette 调色板
+                    本例在PaletteActivity中，只用了一张图片展示效果；
+                    实现：
+                                    //同步的synchronously
+                                        Palette.Builder builder =  Palette.from(mBitmap);
+                                    //  mPalette = builder.generate();
+
+                                    //异步的AsyncTask
+                                        builder.generate(new Palette.PaletteAsyncListener() {
+                                            @Override
+                                                        public void onGenerated(Palette palette) {
+                                                            // 进行获取颜色并使用
+
+                                                        }
+                                        });
+
+                    能够获取6种颜色开关 --> 6 X 3 = 18 种颜色(每种开关又包含3种颜色，Rgb, bodyColor 和  TitleColor)
+                    getBodyTextColor();      //适用于描述文字
+                    getRgb();                //主要颜色  适用于设置toolbar颜色
+                    getTitleTextColor();     //适合toolbar标题颜色

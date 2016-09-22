@@ -112,8 +112,8 @@ public class PaletteActivity extends AppCompatActivity {
 
 
     /**
-     * 获取6种颜色开关以获取颜色(每种开关又包含两种颜色，bodyColor 和  TitleColor)
-      
+     * 获取6种颜色开关以获取颜色(每种开关又包含3种颜色，Rgb, bodyColor 和  TitleColor)
+
      * getBodyTextColor();      //适用于描述文字
      * getRgb();                //主要颜色  适用于设置toolbar颜色
      * getTitleTextColor();     //适合toolbar标题颜色
